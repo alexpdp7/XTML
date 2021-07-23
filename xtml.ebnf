@@ -1,0 +1,5 @@
+XTML = paragraph*
+
+paragraph = line+ (<empty_line+> | <#"\z">)
+line = #"\S+.*" <"\n">
+empty_line = #"\s*\n"
